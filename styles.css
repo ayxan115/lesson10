@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #42454a;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: calc(8px + 1vw);
+}
+
+main {
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+}
+
+.container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* HEADER start */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem 0.6rem 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eae8f3;
+}
+
+.nav a,
+.auth a {
+  font-size: 0.8rem;
+  margin-left: 0.7rem;
+}
+
+.auth a {
+  color: #42454a;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth a:hover {
+  color: #fff;
+  background-color: #42454a;
+  box-shadow: 7px 6px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER end */
+
+/* HERO start */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroRight img {
+  width: 100%;
+}
+
+.heroLeft h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.heroLeft h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 4.7rem;
+}
+
+.heroLeft p {
+  max-width: 15.5rem;
+  font-size: 1rem;
+  font-weight: 200;
+  padding-top: 3rem;
+  border-top: 5px solid #42454a;
+  margin-bottom: 3rem;
+}
+
+.buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 20rem;
+}
+.buy a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videoWatch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 9rem;
+  gap: 0.3rem;
+}
+
+.buyBtn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: #42454a;
+  color: #eae8f3;
+  height: 3rem;
+  width: 3rem;
+  padding: 0.3rem;
+}
+
+/* HERO end */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  html {
+    font-size: calc(6px + 1vw);
+  }
+
+  header {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav,
+  .auth {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .heroLeft {
+    display: flex;
+  }
+
+  .heroLeft h1,
+  .heroLeft h2 {
+    font-size: 2.5rem;
+  }
+
+  .heroLeft p {
+    padding-top: 2rem;
+    max-width: 100%;
+  }
+
+  .buy {
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .buy span {
+    display: none;
+  }
+
+  .buyBtn {
+    height: 7rem;
+    width: 7rem;
+    margin-left: 3rem;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .videoWatch {
+    justify-content: center;
+  }
+
+  .heroTitleMain {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .heroTitleMain h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+}
